@@ -1,4 +1,6 @@
 Uptosnuff::Application.routes.draw do
+  resources :tasks, only: [:new, :create, :show]
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

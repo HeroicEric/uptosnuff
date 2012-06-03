@@ -1,4 +1,6 @@
 Uptosnuff::Application.routes.draw do
+  root to: "tasks#index"
+
   resources :tasks, only: [:index, :show, :new, :create]
 
   # The priority is based upon order of creation:

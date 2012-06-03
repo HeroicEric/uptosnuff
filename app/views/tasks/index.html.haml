@@ -1,5 +1,8 @@
 %h1 Tasks List
 
+%p Create a new task by filling out the form below
+= render "tasks/form"
+
 %ul
   - @tasks.each do |task|
     %li= task.title
